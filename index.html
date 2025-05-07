@@ -1,1 +1,572 @@
-OKE
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Al-Quds</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+		<style>
+        /* Other Clocks */
+        .sclock-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 13px;
+            width: 100%;
+            max-width: 900px;
+            padding-bottom: 20px;
+        }
+        .sclock {
+            width: 15vw;
+            max-width: 115px;
+            height: 15vw;
+            max-height: 115px;
+            border: 6px solid gray;
+            border-radius: 50%;
+            position: relative;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .shand {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: bottom;
+            background: white;
+            border-radius: 5px;
+            opacity: 0.4; /* Makes hands semi-transparent */
+        }
+        .shour {
+            width: 3%;
+            height: 25%;
+        }
+        .sminute {
+            width: 2%;
+            height: 35%;
+        }
+        .scenter-dot {
+            width: 5%;
+            height: 5%;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .sclock-title {
+            position: absolute;
+            top: 10%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .sclock-time {
+            position: absolute;
+            bottom: 10%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .sclock {
+                width: 30vw;
+                height: 30vw;
+            }
+        }   
+    </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+				            <!-- https://fontawesome.com/search?o=r&ic=free&s=regular&ip=classic -->
+							<span class="icon fa-handshake"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1 id="title">Title</h1>
+                                <!-- Others Clocks -->
+                                <div class="sclock-container">
+                                    <div class="sclock">
+                                        <span class="sclock-title"></span>
+                                        <span class="sclock-time"></span>
+                                        <div class="shand shour"></div>
+                                        <div class="shand sminute"></div>
+                                        <div class="scenter-dot"></div>
+                                    </div>
+                                    <div class="sclock">
+                                        <span class="sclock-title"></span>
+                                        <span class="sclock-time"></span>
+                                        <div class="shand shour"></div>
+                                        <div class="shand sminute"></div>
+                                        <div class="scenter-dot"></div>
+                                    </div>
+                                    <div class="sclock">
+                                        <span class="sclock-title"></span>
+                                        <span class="sclock-time"></span>
+                                        <div class="shand shour"></div>
+                                        <div class="shand sminute"></div>
+                                        <div class="scenter-dot"></div>
+                                    </div>
+                                    <div class="sclock">
+                                        <span class="sclock-title"></span>
+                                        <span class="sclock-time"></span>
+                                        <div class="shand shour"></div>
+                                        <div class="shand sminute"></div>
+                                        <div class="scenter-dot"></div>
+                                    </div>
+                                    <div class="sclock">
+                                        <span class="sclock-title"></span>
+                                        <span class="sclock-time"></span>
+                                        <div class="shand shour"></div>
+                                        <div class="shand sminute"></div>
+                                        <div class="scenter-dot"></div>
+                                    </div>
+                                </div>
+							    <span id="teks"></span>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro" id="menu1">Intro</a></li>
+								<li><a href="#work" id="menu2">Work</a></li>
+								<li><a href="#about" id="menu3">About</a></li>
+								<li><a href="#contact" id="menu4">Contact</a></li>
+								<!-- <li><a href="#elements">Elements</a></li> -->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major" id="title1">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+							    <span id="teks1"></span>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major" id="title2">Work</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+							    <span id="teks2"></span>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major" id="title3">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+							    <span id="teks3"></span>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" id="title4">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									    <li><button href="#" ><span class="icon fa-comments"></span> KakaoTalk</button></li>
+										
+									</ul>
+								</form>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';
+</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"><em style="font-style: italic;">Html5up</em> design. &copy;<text id="tanggal">1989</text></p>. 
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+      <script type="text/javascript">
+        const teks = "(용봉동 552-7) 광주광역시 북구 설죽로202번길 74. [<a href='https://naver.me/IMyCk7ru'>Navermap</a> | <a href='https://kko.kakao.com/HQ-JilFc8'>Kakaomap</a>]";
+        const teks1 = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                       <blockquote>
+                           Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod.
+                           Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. 
+                           Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
+                       </blockquote> 
+                        Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        <br><br><h4>Founders:</h4>
+						<ol class="alt">
+							<li>Sagittis adipiscing.</li>
+							<li>Dolor pulvinar etiam.</li>
+							<li>Felis enim feugiat.</li>
+						</ol>
+                        In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>`;
+        const teks2 = `<h4>Activities</h4>
+                        Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
+                        Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. 
+                        In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
+						<ul>
+							<li>Sagittis adipiscing.</li>
+							<li>Dolor pulvinar etiam.</li>
+							<li>Felis enim feugiat.</li>
+						</ul>
+                       <hr><h4>Ethics</h4>
+                        Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. 
+                        Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.
+<pre><code>Fringilla nisl. Donec accumsan interdum nisi, 
+Vestibulum ante ipsum primis in faucibus vestibulum. 
+Vestibulum ante ipsum primis
+</code></pre>`;
+        const teks3 = `<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. 
+                        Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. 
+                        <h4>Person in Charges (kakao-id):</h4>
+						<ul class="alt">
+							<li>Leader : Sagittis adipiscing (asdas).</li>
+							<li>Imam 1 : Dolor pulvinar etiam (1das).
+							    <br>Imam 2 : Dolor pulvinar etiam (asdas).
+							    <br>Imam 3 : Qwe pulvinar etiam (asdas).
+							</li>
+							<li>Uzbekistan : Felis enim feugiat (3das).
+							    <br>Indonesia : Umar asdf aa (w31asdas).
+							    <br>Nigeria : Umar asdf aa (1sdas).
+							    <br>Pakistan : Umar asdf aa (1asdas).
+							    <br>Bangladesh : Umar asdf aa (332asdas).
+							</li>
+						</ul>
+                        Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>`;
+
+        const times = [
+            { city: "Subuh", hour: 5, minute: 30 },
+            { city: "Duhr", hour: 11, minute: 45 },
+            { city: "Ashar", hour: 16, minute: 30 },
+            { city: "Magrb", hour: 17, minute: 45 },
+            { city: "Isya'", hour: 19, minute: 55 }
+        ];
+        
+        $(document).ready(function(){
+          console.log("page loaded");
+          $("#menu1").text("Intro");
+          $("#menu2").text("Activities");
+          $("#menu3").text("Comittees");
+          $("#menu4").text("Contact");
+          $("#title").text("PRAYING TIME");
+          $("#title1").text("Introduction");
+          $("#title2").text("Activities & Ethics");
+          $("#title3").text("Active Comittees");
+          $("#title4").text("Contact Us");
+          $("#teks").html(teks);
+          $("#teks1").html(teks1);
+          $("#teks2").html(teks2);
+          $("#teks3").html(teks3);
+        });
+
+        document.querySelectorAll(".sclock").forEach((clock, index) => {
+            const time = times[index];
+            const hourHand = clock.querySelector(".shour");
+            const minuteHand = clock.querySelector(".sminute");
+            const titleText = clock.querySelector(".sclock-title");
+            const timeText = clock.querySelector(".sclock-time");
+
+            // Set title and time text dynamically
+            titleText.textContent = time.city;
+            timeText.textContent = `${time.hour}:${time.minute.toString().padStart(2, '0')}`;
+
+            // Calculate rotations
+            const hourRotation = (time.hour % 12) * 30 + (time.minute / 60) * 30; // Each hour = 30°
+            const minuteRotation = time.minute * 6; // Each minute = 6°
+
+            // Apply rotations
+            hourHand.style.transform = `translateX(-50%) rotate(${hourRotation}deg)`;
+            minuteHand.style.transform = `translateX(-50%) rotate(${minuteRotation}deg)`;
+        });       
+        
+        // Date now
+        const d = new Date();
+        const month   = d.toLocaleString(["ko","KR"], {month:'long'}); // months from 1-12
+        const day     = d.toLocaleString(["ko","KR"], {weekday:'long'});
+        const jam     = d.getHours();
+        const menit   = String(d.getMinutes()).padStart(2, "0");
+        const tanggal = jam + ":" + menit+ " " + day + "," + d.getDate() + month  + d.getFullYear();
+        document.getElementById("tanggal").innerHTML = tanggal;
+        //console.log(tanggal);
+      </script>
+	</body>
+</html>
